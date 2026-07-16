@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">SiliconWatch oloid logo</title>
+  <desc id="desc">A purple oloid-like orbital sphere mark for SiliconWatch.</desc>
+  <defs>
+    <radialGradient id="core" cx="38%" cy="30%" r="72%">
+      <stop offset="0%" stop-color="#f0eaff"/>
+      <stop offset="22%" stop-color="#c7bbff"/>
+      <stop offset="58%" stop-color="#7d68d9"/>
+      <stop offset="100%" stop-color="#241a58"/>
+    </radialGradient>
+    <linearGradient id="rim-a" x1="30" y1="46" x2="226" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f5efff"/>
+      <stop offset="42%" stop-color="#b3a6ef"/>
+      <stop offset="100%" stop-color="#5d45c7"/>
+    </linearGradient>
+    <linearGradient id="rim-b" x1="38" y1="214" x2="218" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6f58d7"/>
+      <stop offset="52%" stop-color="#d9d3ff"/>
+      <stop offset="100%" stop-color="#8b73ff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.55 0 0 0 0 0.42 0 0 0 0 1 0 0 0 0.75 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="128" cy="128" r="104" fill="#0b0a12"/>
+  <g filter="url(#glow)">
+    <path
+      d="M52 82C75 34 141 34 178 66C225 106 215 183 161 207C107 231 43 197 39 135C37 115 42 96 52 82Z"
+      fill="url(#core)"
+      opacity="0.96"
+    />
+    <path
+      d="M54 80C90 50 140 55 181 93C222 131 219 178 187 199C154 220 104 205 65 166C26 127 22 107 54 80Z"
+      fill="none"
+      stroke="url(#rim-a)"
+      stroke-width="12"
+      stroke-linecap="round"
+    />
+    <path
+      d="M54 176C85 216 144 221 184 184C224 147 215 85 166 58C118 31 62 48 45 96C32 134 39 157 54 176Z"
+      fill="none"
+      stroke="url(#rim-b)"
+      stroke-width="12"
+      stroke-linecap="round"
+      opacity="0.92"
+    />
+    <path
+      d="M82 72C116 93 144 125 174 178"
+      fill="none"
+      stroke="#efeaff"
+      stroke-width="5"
+      stroke-linecap="round"
+      opacity="0.68"
+    />
+    <path
+      d="M65 150C101 130 143 120 194 119"
+      fill="none"
+      stroke="#b3a6ef"
+      stroke-width="4"
+      stroke-linecap="round"
+      opacity="0.54"
+    />
+  </g>
+</svg>
